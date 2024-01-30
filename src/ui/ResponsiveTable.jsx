@@ -71,7 +71,7 @@ const BodyData = [
 
 const ResponsiveTable = () => {
   return (
-    <div className=" mx-5  lg:hidden xl:hidden ">
+    <div className=" mx-5  xl:hidden ">
       <div className=" my-10 w-[400px] lg:w-[1000px] sm:w-[650px] md:w-[730px]">
         {HeadData?.map((item, index) => (
           <ul

@@ -6,7 +6,7 @@ import ResponsiveTable from "./ui/ResponsiveTable";
 
 const App = () => {
   return (
-    <div className="container m-auto">
+    <div className="">
       <NavBar />
       <CardSection />
       <Table />

@@ -39,7 +39,12 @@ const NavBar = () => {
             <img className="" src={user} alt="" />
           </div>
           {show && (
-            <ul className="absolute w-full left-0 top-20 text-center bg-blue-100 transition-all ">
+            <ul className="absolute  w-full left-0 top-20 text-center bg-blue-100 m-auto transition ease-out ">
+              <li
+                onClick={() => setShow(false)}
+                className="flex justify-end items-end mr-5">
+                X
+              </li>
               <li className="hover:bg-blue-200 w-full p-2">Project Tracking</li>
               <li className="hover:bg-blue-200 w-full p-2">
                 Financial Management

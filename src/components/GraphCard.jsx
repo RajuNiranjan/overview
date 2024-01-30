@@ -17,7 +17,7 @@ const GraphCard = () => {
             </button>
           </div>
         </div>
-        <div className="w-full h-[94px]">
+        <div className="w-full h-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="253"

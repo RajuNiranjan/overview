@@ -71,32 +71,34 @@ const BodyData = [
 
 const TableUI = () => {
   return (
-    <div className=" my-10 w-[1262px]">
-      {HeadData?.map((item, index) => (
-        <ul
-          className="grid grid-cols-12 text-center text-[#373737] font-normal text-[16px]"
-          key={index}>
-          <li className="col-span-3">{item?.head1}</li>
-          <li className="col-span-2">{item?.head2}</li>
-          <li className="col-span-2">{item?.head3}</li>
-          <li className="col-span-2">{item?.head4}</li>
-          <li className="col-span-2">{item?.head5}</li>
-        </ul>
-      ))}
-      <div className="flex flex-col gap-2 my-2">
-        {BodyData?.map((item, index) => (
+    <>
+      <div className=" my-10 w-[1262px]">
+        {HeadData?.map((item, index) => (
           <ul
-            key={index}
-            className="grid grid-cols-12  border text-center h-[54px] py-1 rounded-[6px] border-[#90E0EE] text-[#3D3B3B] text-[15px] font-light">
-            <li className="col-span-3">{item?.data1}</li>
-            <li className="col-span-2 text-left">{item?.data2}</li>
-            <li className="col-span-2 text-left">{item?.data3}</li>
-            <li className="col-span-2">{item?.data4}</li>
-            <li className="col-span-2">{item?.data5}</li>
+            className="grid grid-cols-12 text-center text-[#373737] font-normal text-[16px]"
+            key={index}>
+            <li className="col-span-3">{item?.head1}</li>
+            <li className="col-span-2">{item?.head2}</li>
+            <li className="col-span-2">{item?.head3}</li>
+            <li className="col-span-2">{item?.head4}</li>
+            <li className="col-span-2">{item?.head5}</li>
           </ul>
         ))}
+        <div className="flex flex-col gap-2 my-2">
+          {BodyData?.map((item, index) => (
+            <ul
+              key={index}
+              className="grid grid-cols-12  border text-center h-[54px] py-1 rounded-[6px] border-[#90E0EE] text-[#3D3B3B] text-[15px] font-light">
+              <li className="col-span-3">{item?.data1}</li>
+              <li className="col-span-2 text-left">{item?.data2}</li>
+              <li className="col-span-2 text-left">{item?.data3}</li>
+              <li className="col-span-2">{item?.data4}</li>
+              <li className="col-span-2">{item?.data5}</li>
+            </ul>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
