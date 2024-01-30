@@ -34,7 +34,7 @@ const NavBar = () => {
         </div>
         <div>
           <div
-            className=" w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#8CD5F8] relative"
+            className=" w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#8CD5F8] relative cursor-pointer"
             onClick={() => setShow(!show)}>
             <img className="" src={user} alt="" />
           </div>
@@ -42,7 +42,7 @@ const NavBar = () => {
             <ul className="absolute  w-full left-0 top-20 text-center bg-blue-100 m-auto transition ease-out ">
               <li
                 onClick={() => setShow(false)}
-                className="flex justify-end items-end mr-5">
+                className="flex justify-end items-end mr-5 cursor-pointer">
                 X
               </li>
               <li className="hover:bg-blue-200 w-full p-2">Project Tracking</li>

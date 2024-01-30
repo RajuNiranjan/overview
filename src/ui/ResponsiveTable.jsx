@@ -72,7 +72,7 @@ const BodyData = [
 const ResponsiveTable = () => {
   return (
     <div className=" mx-5  xl:hidden ">
-      <div className=" my-10 w-[350px] lg:w-[1000px] sm:w-[650px] md:w-[730px]">
+      <div className=" my-10 w-[380px] lg:w-[1000px] sm:w-[650px] md:w-[730px]">
         {HeadData?.map((item, index) => (
           <ul
             className="grid grid-cols-6 md:grid-cols-9 sm:col-span-8 text-center text-[#373737] font-normal text-[16px]"
