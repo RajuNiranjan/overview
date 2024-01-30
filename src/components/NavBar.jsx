@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/interics logo 1.jpg";
 import user from "../assets/Vector.png";
 import "../index.css";
+import MenuSVG from "../svg/MenuSVG";
 const NavBar = () => {
   const [show, setShow] = useState(false);
 
@@ -33,10 +34,13 @@ const NavBar = () => {
           <img src={logo} alt="logo" />
         </div>
         <div>
-          <div
-            className=" w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#8CD5F8] relative cursor-pointer"
-            onClick={() => setShow(!show)}>
-            <img className="" src={user} alt="" />
+          <div className="flex items-center justify-center gap-3">
+            <div className=" w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#8CD5F8] relative cursor-pointer">
+              <img className="" src={user} alt="" />
+            </div>
+            <div onClick={() => setShow(!show)}>
+              <MenuSVG />
+            </div>
           </div>
           {show && (
             <ul className="absolute  w-full left-0 top-20 text-center bg-blue-100 m-auto transition ease-out ">
