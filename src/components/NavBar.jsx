@@ -38,7 +38,7 @@ const NavBar = () => {
             <div className=" w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#8CD5F8] relative cursor-pointer">
               <img className="" src={user} alt="" />
             </div>
-            <div onClick={() => setShow(!show)}>
+            <div onClick={() => setShow(!show)} className="cursor-pointer">
               <MenuSVG />
             </div>
           </div>
@@ -49,6 +49,7 @@ const NavBar = () => {
                 className="flex justify-end items-end mr-5 cursor-pointer">
                 X
               </li>
+              <li className="h-[21px] w-full border-[1px] border-[#ADBFEE] rounded-2xl"></li>
               <li className="hover:bg-blue-200 w-full p-2">Project Tracking</li>
               <li className="hover:bg-blue-200 w-full p-2">
                 Financial Management
