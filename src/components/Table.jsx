@@ -5,7 +5,7 @@ import TableUI from "../ui/TableUI";
 
 const Table = () => {
   return (
-    <div className="px-5 xl:px-14 hidden xl:inline-block">
+    <div className="px-5 xl:px-14 hidden lg:inline-block xl:inline-block ">
       <div className="flex items-center gap-1">
         <h1 className="text-[#5A5858] text-[12px] xl:text-2xl font-normal">
           Contractor <span className="font-semibold">Overview</span>

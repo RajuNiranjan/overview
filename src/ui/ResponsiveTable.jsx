@@ -71,30 +71,44 @@ const BodyData = [
 
 const ResponsiveTable = () => {
   return (
-    <div className=" mx-5">
-      <div className=" my-10 w-[320px]">
+    <div className=" mx-5  lg:hidden xl:hidden ">
+      <div className=" my-10 w-[400px] lg:w-[1000px] sm:w-[650px] md:w-[730px]">
         {HeadData?.map((item, index) => (
           <ul
-            className="grid grid-cols-6 text-center text-[#373737] font-normal text-[16px]"
+            className="grid grid-cols-6 md:grid-cols-9 sm:col-span-8 text-center text-[#373737] font-normal text-[16px]"
             key={index}>
-            <li className=" text-[12px] col-span-2">{item?.head1}</li>
-            <li className=" text-[12px] col-span-2">{item?.head2}</li>
-            <li className=" text-[12px] col-span-2">{item?.head3}</li>
+            <li className=" text-[12px] col-span-2 md:col-span-3">
+              {item?.head1}
+            </li>
+            <li className=" text-[12px] col-span-2 md:col-span-3">
+              {item?.head2}
+            </li>
+            <li className=" text-[12px] col-span-2 md:col-span-3">
+              {item?.head3}
+            </li>
+            <li className="text-[12px] hidden sm:col-span-2">{item?.head4}</li>
+            <li className="text-[12px] hidden sm:col-span-2">{item?.head5}</li>
           </ul>
         ))}
         <div className="flex flex-col gap-2 my-2">
           {BodyData?.map((item, index) => (
             <ul
               key={index}
-              className="grid grid-cols-6  border text-center h-[54px] py-1 rounded-[6px] border-[#90E0EE] text-[#3D3B3B] text-[15px] font-light">
-              <li className="text-[10px] col-span-2 text-ellipsis overflow-hidden">
+              className="grid grid-cols-6 md:grid-cols-9 sm:col-span-8  border text-center h-[54px] py-1 rounded-[6px] border-[#90E0EE] text-[#3D3B3B] text-[15px] font-light">
+              <li className="text-[10px] col-span-2  md:col-span-3 text-ellipsis overflow-hidden">
                 {item?.data1}
               </li>
-              <li className="text-[10px] col-span-2 text-ellipsis overflow-hidden text-left">
+              <li className="text-[10px] col-span-2 md:col-span-3  text-ellipsis overflow-hidden text-left">
                 {item?.data2}
               </li>
-              <li className="text-[10px] col-span-2 text-ellipsis overflow-hidden text-left">
+              <li className="text-[10px] col-span-2  md:col-span-3 text-ellipsis overflow-hidden text-left">
                 {item?.data3}
+              </li>
+              <li className="text-[10px] hidden sm:col-span-2 text-ellipsis overflow-hidden text-left">
+                {item?.data4}
+              </li>
+              <li className="text-[10px] hidden sm:col-span-2 text-ellipsis overflow-hidden text-left">
+                {item?.data5}
               </li>
             </ul>
           ))}
