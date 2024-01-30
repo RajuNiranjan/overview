@@ -7,7 +7,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="w-full hidden  xl:inline-block">
+      <div className="w-full hidden  xl:inline-block sticky top-0 bg-white">
         <div className="h-[78px]  flex items-center justify-between border-2 border-b-[#5D4CE6] px-10">
           <div>
             <img src={logo} alt="logo" />
@@ -28,7 +28,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-between p-5 border border-b-[#5D4CE6] xl:hidden">
+      <div className="w-full flex justify-between p-5 border border-b-[#5D4CE6] xl:hidden sticky top-0 bg-white">
         <div>
           <img src={logo} alt="logo" />
         </div>
