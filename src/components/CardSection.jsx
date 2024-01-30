@@ -18,7 +18,7 @@ const CardSection = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex mb-5 justify-center items-center">
         <div className=" mt-5 flex flex-col justify-between  items-start xl:hidden ">
           <div className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-4">
             <div className="sm:flex md:flex justify-center items-center gap-5">
