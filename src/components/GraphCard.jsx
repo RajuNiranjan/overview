@@ -4,7 +4,7 @@ import "../index.css";
 const GraphCard = () => {
   return (
     <div>
-      <div className="w-[251px] h-[157px] bg-[#E5F1FD] rounded-[10px] flex flex-col justify-between overflow-hidden">
+      <div className="w-[251px] h-[157px] object-fill bg-[#E5F1FD] rounded-[10px] flex flex-col justify-between overflow-hidden">
         <div className="text-[11px] text-[#747070] font-normal roboto flex justify-between p-5 items-center">
           <div>
             <p>Click to expand for </p>

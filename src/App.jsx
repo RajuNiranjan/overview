@@ -7,8 +7,8 @@ const App = () => {
   return (
     <div className="container m-auto">
       <NavBar />
-      {/* <CardSection />
-      <Table /> */}
+      <CardSection />
+      {/* <Table /> */}
     </div>
   );
 };
